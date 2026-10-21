@@ -113,7 +113,7 @@ fun StylusCanvas(
                 for (i in 1 until stroke.points.size) {
                     val prev = stroke.points[i - 1]
                     val curr = stroke.points[i]
-                    quadraticTo(prev.x, prev.y, (prev.x + curr.x) / 2, (prev.y + curr.y) / 2)
+                    quadraticBezierTo(prev.x, prev.y, (prev.x + curr.x) / 2, (prev.y + curr.y) / 2)
                 }
             }
             drawPath(
@@ -134,7 +134,7 @@ fun StylusCanvas(
                 for (i in 1 until currentPoints.size) {
                     val prev = currentPoints[i - 1]
                     val curr = currentPoints[i]
-                    quadraticTo(prev.x, prev.y, (prev.x + curr.x) / 2, (prev.y + curr.y) / 2)
+                    quadraticBezierTo(prev.x, prev.y, (prev.x + curr.x) / 2, (prev.y + curr.y) / 2)
                 }
             }
             val activeColor = if (toolMode == ToolMode.HIGHLIGHT) {
