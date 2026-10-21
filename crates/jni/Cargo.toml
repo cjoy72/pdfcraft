@@ -1,0 +1,26 @@
+[package]
+name = "pdfcraft-jni"
+description = "Android JNI bindings for PdfCraft engine and renderer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "rust_pdfcraft"
+crate-type = ["cdylib", "rlib"]
+
+[lints.rust]
+unsafe_code = "allow"
+
+[dependencies]
+pdfcraft-render = { workspace = true }
+pdfcraft-engine = { workspace = true }
+pdfcraft-cos = { workspace = true }
+jni = "0.21"
+log = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_logger = "0.14"

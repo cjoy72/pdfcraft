@@ -1,0 +1,8 @@
+<resources>
+    <color name="pdfcraft_primary">#D32F2F</color>
+    <color name="pdfcraft_on_primary">#FFFFFF</color>
+    <color name="pdfcraft_surface">#FAFAFA</color>
+    <color name="pdfcraft_on_surface">#212121</color>
+    <color name="pdfcraft_sepia">#F8F1E5</color>
+    <color name="pdfcraft_sepia_text">#3E3832</color>
+</resources>

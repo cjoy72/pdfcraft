@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PdfCraft</string>
+    <string name="open_pdf">Open PDF</string>
+    <string name="search">Search</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="thumbnails">Thumbnails</string>
+    <string name="annotate">Annotate</string>
+    <string name="night_mode">Dark Mode</string>
+    <string name="sepia_mode">Sepia Paper</string>
+    <string name="eink_mode">E-Ink Contrast</string>
+    <string name="share">Share</string>
+    <string name="page_n_of_m">Page %1$d of %2$d</string>
+    <string name="no_document_open">No document opened. Tap to select a PDF.</string>
+</resources>
